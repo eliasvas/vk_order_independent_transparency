@@ -779,11 +779,7 @@ int main(int argc, char* argv[])
   nvapp::ApplicationCreateInfo appInfo{
       .name       = TARGET_NAME,
       .windowSize = {1600, 1024},
-#ifdef NDEBUG
-      .vSync = false,
-#else
       .vSync = true,
-#endif
       // This sets up the dock positions for the menus
       .dockSetup =
           [](ImGuiID viewportID) {
