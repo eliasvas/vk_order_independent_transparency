@@ -1,0 +1,5 @@
+mkdir OIT
+git clone https://github.com/eliasvas/vk_order_independent_transparency.git
+git clone --recursive https://github.com/nvpro-samples/nvpro_core.git
+cmake -S vk_order_independent_transparency -B vk_order_independent_transparency/build
+cmake --build vk_order_independent_transparency/build --parallel $(nproc)
